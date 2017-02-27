@@ -1,5 +1,4 @@
 
-printPyramid(5);
 
 
 /*
@@ -13,9 +12,19 @@ printPyramid(5);
  *       #####
  *      ######
  */
+function createLine(counter) {
+    line = "";
+    for (var lineLength = 1; lineLength <= counter; lineLength++)
+        line += "#";
+    return line
+}
+
 function printPyramid(height) {
-    console.log("Uh oh... the pyramid is under construction.");
-    console.log("Check back soon, our developers are hard at work as we speak!");
+    var counter = 2;
+    while (counter <= height + 1) {
+        console.log(createLine(counter));
+        counter++;
+}
 
     // TODO
     // print that pyramid!
