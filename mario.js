@@ -12,21 +12,10 @@
  *       #####
  *      ######
  */
-function createLine(counter) {
-    line = "";
-    for (var lineLength = 1; lineLength <= counter; lineLength++)
-        line += "#";
-    return line
-}
-
 function printPyramid(height) {
-    var counter = 2;
-    while (counter <= height + 1) {
-        console.log(createLine(counter));
-        counter++;
-}
-
-    // TODO
-    // print that pyramid!
-
+    if (height == undefined) {
+        height = Number(prompt("Pick a height:\n"))
+    }
+    for (var brick = "##"; brick.length <= height + 1; brick+="#")
+        console.log(brick)
 }
