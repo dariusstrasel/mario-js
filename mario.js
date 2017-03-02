@@ -1,6 +1,3 @@
-
-
-
 /*
  * printPyramid
  *
@@ -24,14 +21,11 @@ function createLine(counter, maxLength) {
 }
 
 function printPyramid(height) {
-    for (var step = 2; step <= height + 1; step++)
-        console.log(createLine(step, height))
+    for (var row = 2; row <= height + 1; row++)
+        console.log(createLine(row, height))
 }
 
-// function printPyramid(height) {
-//     if (height == undefined) {
-//         height = Number(prompt("Pick a height:\n"))
-//     }
-//     for (var brick = "##"; brick.length <= height + 1; brick+="#")
-//         console.log(brick)
-// }
+console.log("\nItssa me' a' Mario!");
+console.log("-".repeat(30));
+printPyramid(5);
+console.log("-".repeat(30));
