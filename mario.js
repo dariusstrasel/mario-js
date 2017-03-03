@@ -2,6 +2,7 @@
 drawPyramid(5);
 
 
+
 /**
  * drawPyramid
  *
@@ -28,13 +29,20 @@ function drawPyramid(height) {
         for (var i = 0; i < numBricks; i++) {
             rowStr += "#";
         }
-
+            // var parent = document.getElementById("pyramid");
+            var child_element = document.createElement("P");
+            var child_text = document.createTextNode(rowStr);
+            child_element.appendChild(child_text);
+            document.getElementById("pyramid").appendChild(child_element);
         // you can delete this now
-        console.log(rowStr)
+        console.log(rowStr);
 
         // TODO 1
         // create an element whose inner text is rowStr,
         // and insert it as a child of the container <div id="pyramid">
 
+
     }
 }
+
+document.getElementById("construction").remove();
