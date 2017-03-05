@@ -46,3 +46,4 @@ function drawPyramid(height) {
 }
 
 document.getElementById("construction").remove();
+
